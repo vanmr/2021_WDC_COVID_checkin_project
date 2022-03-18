@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="css/all.css" rel="stylesheet"  media="all" type="text/css" />
+<script src="javascript/all.js"></script>
+<title>Account</title>
+</head>
+<body onload="infor()">
+<div class="top">
+  <h1>COVID-19 tracing</h1>
+  <br/>
+</div>
+<div class="menu">
+  <div class="logo"><a href="check.html"><img src="images/logo.jpg" height="60" alt="check in"/></a></div>
+  <ul class="center">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AccInfor.html">Account</a></li>
+        <li><a href="history.html">History</a></li>
+  </ul>
+</div>
+<form action="index.html">
+           <div class="lx">
+          <p>Account information</p>
+      </div>
+      <ul class="feedback">
+        <li>
+          <input   class="txt" type="text" id = "firstname" placeholder="First name">
+        </li>
+        <li>
+          <input class="txt" type="text" id = "lastname" idplaceholder="Last name">
+        </li>
+        <li>
+          <input class="txt" type="text" id = "phone" placeholder="Phone number">
+        </li>
+        <li>
+          <input   class="txt" type="text" id = "email" placeholder="Email">
+        </li>
+        <li>
+          <input   class="txt" type="password" id = "password" placeholder="Password" id="p1">
+        </li>
+		 <li>
+          <input   class="txt" type="password" placeholder="Enter your password again" id="p2" onkeyup="password()">
+        </li>
+        <li>
+        <div><p style = "color:red;" id="p"> </p></div>
+        <div class="hei10"></div>
+        <button onclick="save()">Save</button>
+        <br>
+        </li>
+      </ul>
+    </form>
+ <div class="clear"></div>
+<div class="end">
+  <p>WDC project</p>
+</div>
+</body>
+
+</html>

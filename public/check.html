@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<link href="css/all.css" rel="stylesheet"  media="all" type="text/css" />
+<script src="javascript/all.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBozPXISHs3OqbUKNjjCu62DWT-yqa1YJU&callback=initMap&libraries=places,geometry&channel=GMPSB_locatorplus_v2_cABCDE" async defer></script>
+<title>check in</title>
+</head>
+<body onload = "getLocation()">
+<div class="top">
+  <h1>COVID-19 tracing</h1><br/>
+</div>
+<div class="menu">
+  <ul class="center">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="account.html">Account</a></li>
+      <li><a href="history.html">History</a></li>
+  </ul>
+</div>
+<div class="content">
+  <div class="pad">
+
+    <form >
+      <div class="lx">
+          <p>Check In</p >
+    </div>
+    <ul class="feedback">
+        <li>
+          <input   class="txt" type="text" id = "address" placeholder="Please enter the address">
+        </li>
+        <li>
+          <p id = 'x'></p>
+          <div class="hei10"></div>
+          <button onclick="checkin()">Check In</button>
+        <br>
+        </li>
+      </ul>
+    </form>
+
+
+  </div>
+</div>
+<div class="end">
+  <p>WDC project</p >
+</div>
+</body>
+</html>
